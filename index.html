@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Rock paper scissor</h1>
+    <section class="button-container">
+      <button class="btn-move" onclick="playGame('rock')">
+        <i class="fa-solid fa-hand-fist"></i>
+      </button>
+      <button class="btn-move" onclick="playGame('paper')">
+        <i class="fa-solid fa-hand"></i>
+      </button>
+      <button class="btn-move" onclick="playGame('scissor')">
+        <i class="fa-solid fa-hand-peace"></i>
+      </button>
+    </section>
+    <p class="result no-visibilite">
+
+    </p>
+    <section class="both-moves no-visibilite">
+      <div class="view-moves user-move">
+        
+        
+      </div>
+      <div class="view-moves cpu-move">
+        
+        
+      </div>
+    </section>
+    <section id="score">
+      <p class="info" id="wins">Wins: <span id="wins-number">0</span></p>
+      <p class="info" id="losses">Losses: <span id="losses-number">0</span></p>
+      <p class="info" id="ties">Ties: <span id="ties-number">0</span></p>
+    </section>
+    <button onclick="resetScore()" id="reset-button">Reset Score</button>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/d151681058.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
